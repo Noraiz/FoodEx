@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/monal"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.8"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Monal "
+                    android:textColor="@color/colorGray"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Beautiful and Expensive "
+                        android:textColor="@color/colorLightGray"
+                        android:textSize="14dp" />
+
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/img_loc"-->
+                        <!--android:layout_width="14dp"-->
+                        <!--android:layout_height="14dp"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:src="@drawable/placeholder" />-->
+
+
+                </LinearLayout>>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Pir Sohawa, Islamabad."
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginTop="5dp"
+                    android:text="03235263775"
+                    android:textColor="@color/colorLightGray"
+                    android:textSize="12dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
